@@ -1,6 +1,6 @@
 # FizzBuzz Game Application
 
-A full-stack application built using React (frontend), ASP.NET Core (backend), and PostgreSQL (database). This project allows users to play and manage FizzBuzz games, track their progress, and view leaderboards.
+A full-stack application built using **React** (frontend), **ASP.NET Core** (backend), and **PostgreSQL** (database). This project allows users to play and manage FizzBuzz games, track their progress, and view leaderboards.
 
 ---
 
@@ -56,7 +56,7 @@ Ensure you have the following installed:
 ### Cloning the Repository
 ```bash
 git clone dqduong2003/FizzBuzzVariation
-cd fizzbuzz-game
+cd FizzBuzzVariation
 ```
 
 ### Install Frontend Dependencies
