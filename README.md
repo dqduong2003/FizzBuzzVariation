@@ -7,6 +7,7 @@ A full-stack application built using **React** (frontend), **ASP.NET Core** (bac
 ## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
 - [Setup and Installation](#setup-and-installation)
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
@@ -24,6 +25,14 @@ A full-stack application built using **React** (frontend), **ASP.NET Core** (bac
 
 ---
 
+## Tech Stack
+- **Frontend**: React, TypeScript, Axios
+- **Backend**: ASP.NET Core, Entity Framework Core
+- **Database**: PostgreSQL
+- **Other**: Docker, Docker Compose
+
+---
+
 ## Screenshots
 ### Homepage
 ![homepage](screenshot/home_page.png)
@@ -33,14 +42,6 @@ A full-stack application built using **React** (frontend), **ASP.NET Core** (bac
 
 ### Game Session
 ![homepage](screenshot/session.png)
-
----
-
-## Tech Stack
-- **Frontend**: React, TypeScript, Axios
-- **Backend**: ASP.NET Core, Entity Framework Core
-- **Database**: PostgreSQL
-- **Other**: Docker, Docker Compose
 
 ---
 
