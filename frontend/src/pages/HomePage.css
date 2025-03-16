@@ -1,0 +1,8 @@
+.buttonsHolder {
+    display: flex; /* Use flexbox for buttons */
+    gap: 2rem; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 5rem; /* Space between text and buttons */
+}
+
+

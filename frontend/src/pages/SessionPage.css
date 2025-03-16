@@ -1,0 +1,132 @@
+.sessionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    width: 750px;
+}
+
+/* Top section: Remaining Time */
+.remainingTime {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+/* Correct and Incorrect Box */
+.scoreBox {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.scoreBox p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.scoreBox .correct {
+    color: #28a745; /* Green for correct */
+}
+
+.scoreBox .incorrect {
+    color: #e63946; /* Red for incorrect */
+}
+
+/* Middle section: Random Number */
+.randomNumber {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Bottom section: Input and Button */
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.inputContainer label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.inputContainer input[type="text"] {
+    width: 60%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.inputContainer input[type="text"]:focus {
+    outline: none;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.inputContainer button {
+    margin-top: 1rem;
+    background-color: #3586ff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputContainer button:hover {
+    background-color: #2a68cc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .remainingTime,
+    .scoreBox p {
+        font-size: 1rem;
+    }
+
+    .randomNumber {
+        font-size: 3rem;
+    }
+
+    .inputContainer input[type="text"] {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .inputContainer button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

@@ -1,0 +1,105 @@
+.tableContainer {
+    width: 60%;
+
+}
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableContainer thead tr {
+    background-color: #616161; /* Header background color */
+    color: #fff;
+    font-weight: bold;
+}
+
+.tableContainer th, td {
+    padding: 0.1rem;
+    border-bottom: 1px solid #ddd; /* Adds separation between rows */
+}
+
+.tableContainer tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.tableContainer tbody tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+    transition: background-color 0.3s ease;
+}
+
+.tableContainer th {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 0rem;
+}
+
+.tableContainer td ul {
+    margin: 0;
+    padding-left: 1rem; /* Space for bullet points */
+    list-style: disc; /* Bullet point style for rules */
+}
+
+.tableContainer td ul li {
+    margin: 0.3rem; /* Space between rule items */
+}
+
+.tableContainer td:last-child {
+    text-align: center; /* Center-align the "Play" button */
+}
+
+/* .NavButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3586ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.NavButton:hover {
+    background-color: #2a68cc;
+    cursor: pointer;
+} */
+.tableContainer button {
+    padding: 0.5rem 1rem;
+}
+
+.button--mimas {
+	/* text-transform: uppercase; */
+	letter-spacing: 0.05rem;
+	font-weight: 700;
+	font-size: 0.85rem;
+	border-radius: 0.3rem;
+	overflow: hidden;
+	color: #fff;
+	background: #e7e7e7;
+}
+
+.button--mimas span {
+	position: relative;
+	/* mix-blend-mode: difference; */
+}
+
+.button--mimas::before {
+	content: '';
+	background: #2a68cc;
+	width: 120%;
+	left: -10%;
+	transform: skew(30deg);
+	transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button--mimas:hover::before {
+	transform: translate3d(100%,0,0);
+}

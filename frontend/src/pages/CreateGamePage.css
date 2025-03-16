@@ -1,0 +1,126 @@
+.formContainer form {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Monsterrat', sans-serif;
+    margin-top: 3rem;
+}
+
+.formContainer form > div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Align the label text to the left */
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3586ff;
+    outline: none;
+}
+
+/* Flex layout for Divisor and Replacement inputs */
+.formContainer div > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formContainer div > div label {
+    margin: 0; /* Remove margin from labels inside the same line */
+    flex: 1;
+}
+
+.formContainer div > div input {
+    flex: 2;
+}
+
+.formContainer button {
+    background-color: #3586ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.formContainer button:hover {
+    background-color: #2a68cc;
+}
+
+.formContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.formContainer ul li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formContainer ul li button {
+    background-color: #e63946;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.formContainer ul li button:hover {
+    background-color: #d62828;
+}
+
+.formContainer h3 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    div > div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

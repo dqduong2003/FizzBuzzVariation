@@ -1,0 +1,137 @@
+.startSessionFormContainer {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3rem;
+    text-align: left; /* Ensure all text aligns to the left */
+}
+
+.startSessionFormContainer h1,
+.startSessionFormContainer h3,
+.startSessionFormContainer p,
+.startSessionFormContainer label {
+    font-size: 1rem; /* Consistent font size for all elements */
+    color: #333333; /* A dark gray for better readability */
+    line-height: 1.5; /* Improve readability with consistent line height */
+    margin-bottom: 1rem; /* Consistent spacing between elements */
+    font-weight: 500; /* Regular weight for most text */
+}
+
+.startSessionFormContainer h3 {
+    font-weight: 700; /* Make headings slightly bolder */
+}
+
+.startSessionFormContainer p {
+    margin-top: 0; /* No extra top margin for paragraphs */
+}
+
+.startSessionFormContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0; /* Consistent spacing for lists */
+}
+
+.startSessionFormContainer ul li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0.7rem 1rem; /* Consistent padding */
+    border-radius: 5px;
+    margin-bottom: 0.5rem; /* Space between list items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem; /* Consistent text size */
+}
+
+.startSessionFormContainer ul li button {
+    background-color: #e63946;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.startSessionFormContainer ul li button:hover {
+    background-color: #d62828;
+}
+
+.startSessionFormContainer form > div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Stack inputs and labels vertically */
+}
+
+.startSessionFormContainer label {
+    font-size: 1rem; /* Same size as other text */
+    color: #000000;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Align label text to the left */
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Consistent size */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-top: 0.3rem; /* Slight margin between label and input */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3586ff;
+    outline: none;
+}
+
+.startSessionFormContainer button {
+    background-color: #3586ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    text-align: center;
+}
+
+.startSessionFormContainer button:hover {
+    background-color: #2a68cc;
+}
+
+.startSessionFormContainer form label {
+    text-align: left;
+    font-weight: 700;
+}
+
+.startSessionFormContainer form button {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .startSessionFormContainer {
+        padding: 1.5rem;
+    }
+
+    .startSessionFormContainer button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .startSessionFormContainer form > div {
+        flex-direction: column; /* Ensure form inputs stack on smaller screens */
+        gap: 0.5rem;
+    }
+}
